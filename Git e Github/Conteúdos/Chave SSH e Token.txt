@@ -1,0 +1,27 @@
+CHAVE SSH
+----- ---
+
+É uma forma de estabelecer de forma segura uma conexar encriptada entre duas máquinas, assim reconhecendo todos os 
+processos de sua máquina.
+
+Comando para gerar chave: ssh-keygen -t ed25519 -C bielfgq@gmail.com
+
+Comando para mostrar o conteúdo do arquivo gerado: cat <nome do arquivo>
+
+Comando para gerar seu agente: eval $(ssh-agent -s)
+
+Comando para adicionar chave ao agente: ssh-add <nome do arquivo>
+
+TOKEN
+-----
+
+Uma proteção mais básica, sem tantos processos. Após ser gerado o Token necessário salvar na máquina. Utiliza o Token
+quando o seu processo pedir sua senha. Para clonar usa a chave https.
+
+Para criar o Token:
+
+Settings
+Developer Settings
+Generate Tokens
+Marcar o campo "Repo"
+Gerar New Token

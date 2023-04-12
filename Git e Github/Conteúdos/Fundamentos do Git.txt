@@ -1,0 +1,26 @@
+SHA1
+----
+
+É um conjunto de funções hash criptográficas projetadas pela NSA. Gera um conjunto de 40 caracters.
+
+openssl sha1 <nome do diretório/arquivo> -> Faz como que a informação seja criptografada
+
+BLOBS
+-----
+
+Um objeto que contém metadados.
+
+echo 'conteudo' | git hash-object --stdin -> retorna o SHA1 dessa String.
+echo -e 'blob 9\0conteudo' -> Gera o mesmo SHA1 pois os metadados foram especificados.
+
+TREE
+----
+
+Armazena Blobs dentro dela, também contendo metadados. Se tiver alguma alteração em qualquer arquivo é modificado
+toda a estrutura.
+
+COMMIT
+------
+
+O mais importante, onde todas as Blobs e Tree's são ligados a ele.
+

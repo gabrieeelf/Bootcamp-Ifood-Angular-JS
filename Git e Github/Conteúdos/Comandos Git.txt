@@ -1,0 +1,25 @@
+Comandos CMD
+
+Dir -> Listar todos os diretórios
+ls -> Listar todos os diretórios (linux)
+
+cd / -> Leva para a base do diretório C
+cd <Nome do Diretório> -> Acessa o diretório específico
+
+cd .. -> Voltar um nível do repositório
+
+cls -> Limpar o terminal
+clear -> Limpar o terminal (Linux) "CTRL + L também executa essa função"
+
+TAB -> Autocompleta a linha de código
+
+mkdir <Nome da Pasta> -> Criar uma pasta
+
+suso so -> Permissão para criar uma pasta
+
+echo hello > hello.txt -> Cria algo direcionado a um arquivo
+
+del <nome da pasta> -> Deleta tudo o que está no repositório indicado
+
+rmdir <nome do diretório> /S /Q-> Exclui o diretório por completo, não apenas dados dentro dele
+rm -rf -> Exclui o diretório por completo, não apenas dados dentro dele

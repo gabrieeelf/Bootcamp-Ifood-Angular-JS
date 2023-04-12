@@ -1,0 +1,37 @@
+Primeiros Comandos Git
+
+Git Init -> Inicializa o repositório dentro da pasta para poder versionar
+Git Add * -> Adiciona tudo que está dentro do arquivo
+Git Commit -m -> Carrega uma mensagem dizendo o que foi alterado no projeto, gerando a alteração
+Git Status -> Mostra o status do arquivo
+
+ls -a -> Mostra arquivos ocultos
+mv <nome_do_arquivo> ./<diretório>/
+
+Status do Arquivo
+
+Untracked -> Não identificado (O git ainda não reconhece o arquivo)
+Unmodified -> Não modificado (Quando o arquivo é criado - Git add)
+Modified -> Um arquivo já modificado (Quando é gerado um novo Git Add, tendo alterações)
+Staged -> Quando o arquivo está "Completo"
+
+Quando é realizado o Commit o status vai de Staged para Unmodified.
+
+Passo a Passo Commit
+
+- Git Init (Inicializar Git)
+- Criar Arquivo/Repositório
+- Git Add (Adicionar arquivo no Git)
+- Git Commit -m "<Mensagem>" (Grava a alteração com uma mensagem de status)
+
+Linkando repositório Local com o Repositório Remoto
+
+Ao criar um repositório no Git é gerado um link, que se trata do endereço remoto do seu repo.
+
+git remote add origin https://github.com/gabrieeelf/livro-receitas.git -> Comando para adicionar como origem o repositório
+remoto
+
+git push origin master -> Empurra o arquivo com o nome (Nesse caso Origin) para dentro do GitHub
+git pull origin master -> Pucha o arquivo para unificar os arquivos divergentes
+
+git clone <link_diretório> -> Clona todo o conteúdo de um diretório direto para o seu.
