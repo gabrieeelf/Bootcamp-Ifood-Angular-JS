@@ -1,0 +1,5 @@
+console.log(); -> Imprime no console
+
+Declarando variavél
+let x = 10;
+const pi = 3.14159;
