@@ -1,0 +1,37 @@
+Declarando variáveis
+
+Boolean
+const azul = true;
+const azul = false;
+
+10 > 5? True
+10 < 5? True
+
+Exemplo:
+let num = 11;
+const numero_par = (num %2) === 0;
+console.log(numero_par); -> False
+
+Estruturas Condicionais
+
+Dois modos de declarar uma estrutura condicional, com a condição em uma constante ou declarada 
+direta na estrutura
+
+let num = 5;
+const is_numero_par = (num %2) === 0;
+
+if (numero_par) {
+    console.log('Seu número é par!');
+} else {
+    console.log('Seu número é impar!');
+}
+
+////////////////////////////////////////
+
+if(num === 0){
+    console.log('Número invalido');
+} else if (num %5 === 0) {
+    console.log('Divisivel por 5');
+} else {
+    console.log('Não divisivel por 5');
+}
