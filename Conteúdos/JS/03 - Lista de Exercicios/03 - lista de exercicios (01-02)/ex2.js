@@ -18,6 +18,8 @@ let altura = 1.90;
 const imc = peso / Math.pow(altura, 2); /* Math.pow(altura, 2) -> Uma função da classe Math, para colocar um
                                         valor como potência, nesse caso ao quadrado*/
 
+console.log("Seu IMC: " + imc.toFixed(4))
+
 if (imc < 18.5) {
     console.log('Abaixo do Peso');
 
@@ -33,5 +35,3 @@ if (imc < 18.5) {
 } else {
     console.log('Obesidade Gravíssima');
 }
-
-console.log("Seu IMC: " + imc.toFixed(4))

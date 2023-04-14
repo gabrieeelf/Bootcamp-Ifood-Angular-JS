@@ -1,0 +1,44 @@
+Declarando Função:
+
+function exemplo(){
+    <bloco de código>
+}
+
+////////////////////////////
+
+Chamando uma função:
+
+exemplo();
+
+////////////////////////////
+
+Função com parametros:
+
+function quadrado(valor) {
+    return valor * valor;
+}
+
+const quadradoDeDez = quadrado(10);
+console.log('A potência desse número é de: ' + quadradoDeDez);
+
+function incrementarJuros(valor, percentual) {
+    const valorAcrescimo = (percentual / 100) * valor;
+    return valor + valorAcrescimo;
+}
+
+console.log('\nO valor com juros é de: ' + incrementarJuros(100, 10));
+
+////////////////////////////
+
+Estrutura para ser utilizada:
+
+function calcularJuros (){
+    //<bloco de código>
+}
+
+function main (){
+    console.log('Programa Principal');
+    calcularJuros();
+}
+
+main();
