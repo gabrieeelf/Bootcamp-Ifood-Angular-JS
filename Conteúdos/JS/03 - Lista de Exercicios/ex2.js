@@ -12,7 +12,7 @@
         Acima de 40 - Obesidade Grave
 */
 
-let peso = 60;
+let peso = 60; 
 let altura = 1.90;
 
 const imc = peso / Math.pow(altura, 2); /* Math.pow(altura, 2) -> Uma função da classe Math, para colocar um
