@@ -1,0 +1,123 @@
+-------
+OBJETOS
+-------
+
+Exemplo de estrura de um objeto:
+
+const gabriel = {
+    nome: 'Gabriel',
+    idade: 20
+}
+
+Para acessar as informações dentro do Objeto:
+
+console.log(gabriel.nome);
+console.log(gabriel.idade);
+console.log(gabriel);
+
+Atribuindo um campo ao seu objeto, fora da estrutura:
+
+gabriel.altura = 1.90;
+
+Deletando um campo, fora da estrura:
+
+delete gabriel.nome;
+
+Exemplo com método dentro do Objeto:
+
+const pessoa = {
+    nome: 'Gabriel',
+    idade: 20,
+    descrever: function(){
+        console.log('Meu nome é ' + this.nome + ' e minha idade é ' + this.idade);
+    }
+}
+
+Atribuindo nova função ao método descrever:
+
+pessoa.descrever = function (){
+    console.log('Meu nome é ' + this.nome );
+}
+
+Acessando as informações do objeto com outra forma: 
+
+const atributo = 'idade';
+
+console.log(pessoa[atributo]);
+
+-------
+CLASSES
+-------
+
+A classe é a definição do que algo deve ser, e uma instância (objeto) é a ocorrência disso.
+
+Estrutura da utilizaçãode uma classe com sua instancia:
+
+class Pessoa {
+    nome;
+    idade;
+
+    descrever(){
+        console.log('Meu nome é ' + this.nome + ' e minha idade é ' + this.idade);
+
+    }
+}
+
+const gabriel =  new Pessoa();
+gabriel.nome = 'Gabriel';
+gabriel.idade = 20;
+
+const vanessa = new Pessoa();
+vanessa.nome = 'Vanessa';
+vanessa.idade = 42;
+
+gabriel.descrever();
+vanessa.descrever();
+
+O constructor() faz com que todas as vezes que a classe seja chamada passe por ele, assim podemos atribuir sempre
+valores que são necessários, como por exemplo:
+
+constructor(nome, idade){
+    this.name = nome;
+    this.idade = idade;
+    this.dataNascimento = 2023 - idade;
+}
+
+Tornando necessários a inserção na criação de uma nova instância:
+
+const gabriel =  new Pessoa('Gabriel', 20);
+
+Criando uma estruta com uma classe pessoa, onde uma função foi criada para comparar as idades das pessoas criadas:
+
+class Pessoa {
+    nome;
+    idade;
+    dataNascimento;
+
+
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+        this.dataNascimento = 2023 - idade;
+    }
+
+    descrever() {
+        console.log('Meu nome é ' + this.nome + ' e minha idade é ' + this.idade);
+
+    }
+}
+
+function compararPessoas(p1, p2) {
+    if (p1.idade > p2.idade) {
+        console.log(`${p1.nome} é mais velho(a) que ${p2.nome}`);
+    } else if (p2.idade > p1.idade) {
+        console.log(`${p2.nome} é mais velho(a) que ${p1.nome}`);
+    } else {
+        console.log(`${p1.nome} e ${p2.nome} possuem a mesma idade`);
+    }
+}
+
+const gabriel = new Pessoa('Gabriel', 20);
+const vanessa = new Pessoa('Vanessa', 42);
+
+compararPessoas(gabriel, vanessa);
