@@ -1,0 +1,30 @@
+Modelo de arrays:
+
+const alunos ['João', 'Maria', 'Gabriel'];
+
+Acessando esse array:
+
+console.log(alunos[0]); => Retorna 'João';
+
+Adicionando item na lista:
+
+alunos.push('Vanessa'); OU
+alunos[3] = 'Vanessa';
+
+Removendo itens:
+
+alunos.pop() => Exclui o ultimo item da lista
+alunos.shift() = Exclui o primeiro item da lista
+
+Consultando o tamanho da lista:
+
+alunos.length
+
+Percorrendo letra por letra de um nome:
+
+const nome = 'Gabriel Felipe Gomes de Queiroz'
+
+for (let i = 0; i < nome.length; i++) {
+    const letra = nome[i];
+    console.log(letra);
+}
