@@ -1,0 +1,50 @@
+A importação serve para que o código seja dividido, deixando a estrutura totalmente organizada e mais limpo, como por
+exemplo a utilização das funções em um arquivo e a execução em outro.
+
+Como importar informações de outro arquivo:
+
+const funcoes = require('./funcoes-auxiliares');
+
+console.log(funcoes.gets());
+
+Uma forma mais simplificada:
+
+const {gets, print} = require('./funcoes-auxiliares');
+
+print(gets());
+
+Para essa importação ocorrer, no outro arquivo é necessário ocorrer a exportação:
+
+function gets() {
+    return 10;
+}
+
+function print(texto) {
+    console.log(texto);
+}
+
+module.exports = { gets, print };
+
+Primeira solução do exercício:
+
+const { gets, print } = require('./funcoes-auxiliares');
+
+const numerosSorteados = [];
+
+for (let i = 0; i < 5; i++) {
+    const numeros = gets();
+    numerosSorteados.push(numeros);
+}
+
+let maiorNumero = 0;
+
+for (let i = 0; i < numerosSorteados.length; i++) {
+    const numeros = numerosSorteados[i];
+
+    if (numeros > maiorNumero) {
+        maiorNumero = numeros;
+    }
+}
+
+print(maiorNumero);
+
