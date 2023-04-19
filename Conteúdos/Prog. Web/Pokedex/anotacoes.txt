@@ -1,0 +1,2 @@
+O protocolo HTTP funciona da forma de cliente - servidor, onde ocorre a solicitação do cliente e o 
+servidor interpreta retornando aquilo que foi solicitado.
