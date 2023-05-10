@@ -5,25 +5,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../desafio.01/styles/card.css">
+        <script src="src/Components/CardNews.js" defer></script>
+        <script src="src/Components/TituloDinamico.js" defer></script>
         <title>PORTAL DE NOTÍCIAS GALÁTICA</title>
     </head>
     <body>
-        <div class="container">
+        <card-news 
+            autor="Gabriel";
+            title="Dath Vader Contrata";
+            link="www.google.com";
+            photo="../desafio.01/assets/darth_vader.jpg";
+            content="Darth Vader procura desenvolvedores que saibam web components";
+        ></card-news>
 
-            <div class="card">
-
-                <div class="card_left">
-                    <span>By Gabriel Felipe</span>
-                    <a href="#"><h1>Darth Vader Contrata Devs</h1></a>
-                    <p>Darth Vader procura desenvolvedores que saibam web components</p>
-
-                </div>
-
-                <div class="card_right">
-                    <img src="../desafio.01/assets/darth_vader.jpg" alt="" srcset="" width="300rem">
-                    
-                </div>
-            </div>
-        </div>
+        <card-news 
+            title="Mais uma noticia";
+            link="www.google.com";
+            content="Finge que tem um texto bom aqui";
+        ></card-news>
     </body>
 </html>
