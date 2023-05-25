@@ -1,4 +1,4 @@
-<div class="container_big-card">
+<!-- <div class="container_big-card">
   <div class="big-card_image">
     <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt46a0433af52c06a5/64386792311bf70dbf772637/SCCPxNike_Home_Details_1x1_1.jpg?auto=webp&format=pjpg&width=3840&quality=60"
     alt=""
@@ -16,6 +16,27 @@
       <a href="https://www.corinthians.com.br/" target="_blank">
         O nome Corinthians foi escolhido em homenagem ao Corinthian FC, um clube de futebol inglês que excursionou pelo Brasil em 1910. O Corinthian FC era conhecido por sua ética esportiva, fair play e por disseminar o futebol como um esporte para o povo. Inspirados pelos valores do clube inglês, os fundadores do Corinthians decidiram adotar seu nome como uma forma de expressar a paixão pelo futebol.
       </a>
+    </p>
+  </div>
+</div> -->
+
+<div class="container_big-card">
+  <div class="big-card_image">
+    <img src="{{photoCover}}"
+    alt=""
+    height="200px"
+    srcset=""
+    >
+  </div>
+
+  <div class="big-card_title">
+    <h1><a [routerLink]="['content', Id]" target="_blank">{{cardTitle}}</a></h1>
+  </div>
+
+  <!-- https://www.corinthians.com.br/ -->
+  <div class="big-card_description">
+    <p>
+      <a [routerLink]="['content', Id]" target="_blank">{{cardDescription}}</a>
     </p>
   </div>
 </div>
